@@ -1,9 +1,14 @@
 module.exports = {
   title: 'WeekTips',// 设置网站标题
-  description: '简洁好用的待办软件',
+  description: '一款简洁好用的待办软件',
   base: '/',   // 设置站点根路径
   dest: './ROOT',  // 设置输出目录
-  head: [],
+  head: [
+    [
+      'link', // 设置 favicon.ico，注意图片放在 public 文件夹下
+      { rel: 'icon', href: 'logo.png' }
+    ]
+  ],
   plugins: [],
   themeConfig: {
       // 添加导航栏
